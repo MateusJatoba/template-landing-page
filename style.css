@@ -1,0 +1,104 @@
+/* Estilo do Header */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+header {
+    position: relative;
+    height: 650px; /* Altura total do header */
+    overflow: hidden; /* Oculta as imagens que saem da área visível */
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Estilo do carrossel */
+  .carousel {
+    
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 550px;
+    flex: 1;
+    position: relative;
+  }
+  
+  .carousel-images {
+    display: flex;
+    width: 100%; /* Ajuste conforme o número de imagens */
+    height: 100%;
+    transition: transform 1s ease-in-out;
+  }
+  
+  .carousel-images img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    flex: 0 0 100%; /* Cada imagem ocupa 100% da largura do contêiner */
+  }
+  
+  /* Estilo da Navbar */
+  .navbar {
+    background: linear-gradient(135deg, darkred 95%, transparent 5%);
+    height: 100px; /* Altura da navbar */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0.3rem 0.8rem #e7dede;
+    font-family: Arial, sans-serif; /* Escolha uma fonte simples */
+    color: whitesmoke;
+    
+    
+  }
+  
+  .navbar h1 {
+      font-size: 3rem; /* Tamanho grande para o título */
+      font-weight: bold; /* Fonte em negrito */
+      letter-spacing: -0.02em; /* Espaçamento ligeiramente ajustado */
+      margin: 0;
+  }
+
+  main{
+    height: 60vh;
+    overflow: hidden; /* Isso evita que o conteúdo ultrapasse o main */
+    display: flex; /* Se necessário, organize o conteúdo interno com flexbox */
+    flex-direction: column;
+    /* background: linear-gradient(to bottom, antiquewhite 0%, whitesmoke 100%); */
+    /* background-attachment: fixed; */
+  }
+
+  .planos{
+    height: 100%; /* Certifique-se de que preencha o main sem ultrapassar */
+    display: flex;
+    /* padding-top: 5px; */
+    margin-top: 4vh;
+    overflow: auto;
+  }
+
+  .plano_free{
+    padding: 1vw;
+    height: 100%;
+    width: 30%;
+    border: 3px solid black;
+    text-align: center;
+    box-shadow: 0 0.3rem 0.8rem #e7dede;  
+  }
+
+  .anuncio{
+    padding-top: 4vh ;
+    text-align: center;
+    font-family: Galano, Helvetica, Arial, sans-serif;
+    font-size: 1.5rem; /* Tamanho grande para o título */
+    font-weight: bold; /* Fonte em negrito */
+    letter-spacing: -0.02em;
+  
+  }
+  
